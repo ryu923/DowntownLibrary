@@ -1,0 +1,112 @@
+﻿body {
+    width: 960px;
+    height: 700px;
+    margin: auto;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color:white;
+    color:Black;
+}
+
+#BlackThemeBody{
+    width: 960px;
+    height: 700px;
+    margin: auto;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color:Black;
+    color:white;
+}
+
+h1{
+    color: darkblue;
+}
+
+/* Header Section */
+.Header{
+    position: absolute;
+    top: 0;
+    width: 960px;
+    height: 200px;
+}
+
+/* Navigation Section */
+.Navigation{
+    position: relative;
+    top: 250px;
+    left: 3px;
+    width: 200px;
+}
+
+/* Content Section */
+.Content{
+    float: right;
+    position: relative;
+    top: 150px;
+    width: 730px;
+}
+
+/* Footer Section */
+footer{
+    clear: both;
+    position: relative;
+    width: 960px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Home Page */
+
+/* Books Page */
+fieldset{
+    text-align: center;
+}
+
+/* AddBooks Page */
+
+#AddBooksButtonParagraph, #AddBooksOuputLabelParagraph{
+    padding-left: 206px;
+    font-weight: bold;
+}
+
+/* Search Page */
+#QuickSearchH3, #AdvancedSearchH3{
+    padding-left: 30px;
+}
+
+#QuickSearchParagraph{
+    text-align:center;
+    padding-bottom: 30px;
+}
+
+#AdvancedSearchButtonParagraph, #AdvancedSearchOutputParagraph{
+    padding-left: 206px;
+    font-weight: bold;
+}
+
+/* Cultural Classes Page */
+#CultralClassesH3{
+    padding-left: 30px;
+}
+
+#CultralClassesTd{
+    width: 100px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    vertical-align:middle;
+}
+
+#CultralClassesTd2{
+    vertical-align: top;
+}
+
+
+
+/* Book Detail Page */
+/*.bookUpdateLabel{
+    display:inline-block;
+    width: 100px;
+    text-align: right;
+}*/

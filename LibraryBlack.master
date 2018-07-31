@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Library.master.cs" Inherits="Library" %>
+
+<%-- Name: David(DaeWoong) Ryu || Student No: 300830801--%>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Library-Assignment1</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:black; color:white;" >
+    <form id="form1" runat="server">
+
+        <!-- Header Section -->
+        <div class="Header">
+            <asp:Image  ID="LibraryBanner"
+                        runat="server"
+                        ImageUrl="~/Images/LibraryBanner.png"
+                        Width="960"
+                        Height="200"
+                        AlternateText="The Downtown Library Intranet" />
+        </div>
+
+        <!-- Navigation Section -->
+        <div class="Navigation">
+            <asp:SiteMapDataSource ID="LibraryBlackSiteMap" runat="server" ShowStartingNode="False" SiteMapProvider="SiteMap2" />
+
+<%-- Name: David(DaeWoong) Ryu || Student No: 300830801--%>
+
+            <asp:Menu ID="LibraryBlackMenu" runat="server" DataSourceID="LibraryBlackSiteMap">
+                <StaticItemTemplate>
+                    <img    src="Images/BookBullet.gif"
+                            alt="+"
+                            width="16"
+                            height="16"
+                            style="border-width: 0px" />
+                    <%# Eval("Text") %>
+                </StaticItemTemplate>
+            </asp:Menu>
+        </div>
+
+        <!-- Content Section -->
+        <div class="Content">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">   
+                <!-- * Contents will be in here. -->
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
+
+<%-- Name: David(DaeWoong) Ryu || Student No: 300830801--%>
